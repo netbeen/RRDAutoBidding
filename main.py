@@ -17,11 +17,11 @@ if __name__ == '__main__':
                         os.system('clear')
                         print time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()))+"\t成功："+str(successCount)+"\t失败："+str(failedCount)
                         print '----------------------------------------------------------------------'
-                        for element in  usefulInfo[0:10]:
+                        for element in  usefulInfo[0:20]:
                                 if element['isTransfer']==True:
                                         print str(element["interest"]) + "\t" + str(element["borrowerLevel"])+ "\t" + str(element["displayLoanType"])+ "\t" + str(element["share"]) + "\t" + "转"
                                 else:
                                         print str(element["interest"]) + "\t" + str(element["borrowerLevel"])+ "\t" + str(element["displayLoanType"])+ "\t" + str(element["finishedRatio"])
-                        time.sleep(5)
+                        time.sleep(1)
                  
                 
